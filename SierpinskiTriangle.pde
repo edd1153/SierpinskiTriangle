@@ -1,3 +1,4 @@
+int len = 800;
 public void setup()
 {
   background(0);
@@ -5,11 +6,11 @@ public void setup()
 }
 public void draw()
 {
-  sierpinski(0, 800, 800);
+  sierpinski(0, 800, len);
 }
-public void mouseDragged()//optional
+public void mouseClicked()//optional
 {
-
+  len += 10;
 }
 public void sierpinski(int x, int y, int len) 
 {
